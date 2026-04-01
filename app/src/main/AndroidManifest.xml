@@ -20,13 +20,5 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.AddCategoryActivity"/>
-
-        <receiver android:name=".receiver.FillExpenseNotificationReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
     </application>
 </manifest>
