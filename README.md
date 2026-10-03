@@ -1,26 +1,20 @@
 # Expense Manager (Android Mini Project)
 
-# Description
-The Expense Manager Android Mini Project is a mobile application designed to help users track and manage their expenses. It provides a convenient way to record and categorize expenses, set budgets, and generate reports to analyze spending habits. This project aims to provide a user-friendly and efficient solution for personal finance management on the Android platform.
+An Android app for tracking daily expenses, built with an MVP structure on SQLite.
 
-# Features
-Expense Tracking: Users can easily add and track their expenses, including the amount spent, date, category, and additional notes.
+## What it does
 
-Expense Categories: The application offers predefined categories (e.g., food, transportation, entertainment) to categorize expenses for better organization and analysis.
+From reading the code (this needs Android Studio and a device/emulator to run, so the walkthrough below is from the source):
 
-Budget Management: Users can set budgets for different categories to monitor their spending limits. The app notifies users when they approach or exceed their budget.
+- Add an expense with an amount, a category, and the date it was logged. Categories come with presets (Food, Transport, Transfer, Rent, Other) and you can add your own from the navigation drawer.
+- Browse what you spent today, this week, and this month in three separate views.
+- The month view shows a bar chart of spending grouped by category (via the holo-graph library) plus the month's total.
+- Everything is stored in a local SQLite database (`ExpenseDatabaseHelper`); there is no login, no sync, and no budget tracking.
 
-Report Generation: The app generates visual reports and charts to provide users with a clear overview of their spending patterns and help them make informed financial decisions.
+## Installation
 
-Data Security: The application ensures the security of user data by implementing appropriate measures, such as data encryption and user authentication.
+Open the project in Android Studio, connect a device (or start an emulator), and build and run the `app` module. The project includes the Gradle wrapper (`gradlew`), so no extra Gradle install is needed.
 
-# Installation
-To run the Expense Manager Android Mini Project on your Android device, follow these steps:
-
-Clone or download the project repository from GitHub.
-
-Open the project in Android Studio.
-
-Connect your Android device to your computer using a USB cable, and ensure USB debugging is enabled on your device.
-
-Build and run the application from Android Studio, selecting your connected device as the deployment target.
+```bash
+./gradlew assembleDebug
+```
