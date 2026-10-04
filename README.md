@@ -6,7 +6,7 @@ An Android app for tracking daily expenses, built with an MVP structure on SQLit
 
 From reading the code (this needs Android Studio and a device/emulator to run, so the walkthrough below is from the source):
 
-- Add an expense with an amount, a category, and the date it was logged. Categories come with presets (Food, Transport, Transfer, Rent, Other) and you can add your own from the navigation drawer.
+- Add an expense with an amount, a category, and the date it was logged. Categories come with presets (Food, Travel, Health, Shopping, Rent, Money-Transfer, Other) and you can add your own from the navigation drawer.
 - Browse what you spent today, this week, and this month in three separate views.
 - The month view shows a bar chart of spending grouped by category (via the holo-graph library) plus the month's total.
 - Everything is stored in a local SQLite database (`ExpenseDatabaseHelper`); there is no login, no sync, and no budget tracking.
